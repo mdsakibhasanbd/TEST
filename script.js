@@ -46,55 +46,55 @@ console.log(lightOn == lightOff); // false
 
 // Array 
 
-// let nums = [1,2,3];
-// nums[0] = 10 ;
-// console.log(nums) // [10,2,3]
+let nums = [1,2,3];
+nums[0] = 10 ;
+console.log(nums) // [10,2,3]
  
-//Example Array 2 :
-// let nums = [1,2,3];
-// let numbers = [1,2,3];
-// console.log( nums ==  numbers ); // false 
+Example Array 2 :
+let nums = [1,2,3];
+let numbers = [1,2,3];
+console.log( nums ==  numbers ); // false 
 
 // Example Object 1 :
 
-// let userOne = {
-//     name : 'Sakib',
-//     role: 'student',
-//     country: 'Bangladesh'
-// }
-// let userTwo = {
-//     name:'Hasan',
-//     role:'student',
-//     country:'Bangladesh'
-// }
-// console.log( userOne == userTwo ) // false
+let userOne = {
+    name : 'Sakib',
+    role: 'student',
+    country: 'Bangladesh'
+}
+let userTwo = {
+    name:'Hasan',
+    role:'student',
+    country:'Bangladesh'
+}
+console.log( userOne == userTwo ) // false
 
 // Example Object 2 : 
 
-// let nums = [1,2,3];
-// let numbers = nums;
-// console.log(nums == numbers); // true
+let nums = [1,2,3];
+let numbers = nums;
+console.log(nums == numbers); // true
 
-// let userOne = {
-//     name:'Sakib',
-//     role:'student',
-//     country:'Bangladesh'
-// }
-// let userTwo = userOne 
-// console.log(userOne == userTwo); // true
+let userOne = {
+    name:'Sakib',
+    role:'student',
+    country:'Bangladesh'
+}
+let userTwo = userOne 
+console.log(userOne == userTwo); // true
 
 // 1. Numbers
 // Declaring Number Data Types  Example :
 
-// let  age = 18 ;
-// const gravity = 9.81 ; // we use const for non-changing valuse , gravitational constant in m/s2
-// let mass = 72; //mass ik kilogram
-// const PI = 3.14;// pi a geometrical constant
+let  age = 18 ;
+const gravity = 9.81 ; // we use const for non-changing valuse , gravitational constant in m/s2
+let mass = 72; //mass ik kilogram
+const PI = 3.14;// pi a geometrical constant
 
 // // Mpre Example 
-// const bollingPoint = 100;//Tempatature in oC, boiling point of water which is a constant 
-// const bodyTemp = 37 ;// oC average  human body temperature, which is a constant
-// console.log(age,gravity,mass, PI,bollingPoint,bodyTemp);
+const bollingPoint = 100;//Tempatature in oC, boiling point of water which is a constant 
+const bodyTemp = 37 ;// oC average  human body temperature, which is a constant
+console.log(age,gravity,mass, PI,bollingPoint,bodyTemp);
 
 // Math Object Example 
 
