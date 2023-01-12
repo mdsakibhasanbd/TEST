@@ -86,78 +86,123 @@
 // // 1. Numbers
 // // Declaring Number Data Types  Example :
 
-// let  age = 18 ;
-// const gravity = 9.81 ; // we use const for non-changing valuse , gravitational constant in m/s2
-// let mass = 72; //mass ik kilogram
-// const PI = 3.14;// pi a geometrical constant
+// // let  age = 18 ;
+// // const gravity = 9.81 ; // we use const for non-changing valuse , gravitational constant in m/s2
+// // let mass = 72; //mass ik kilogram
+// // const PI = 3.14;// pi a geometrical constant
 
-// // // Mpre Example 
-// const bollingPoint = 100;//Tempatature in oC, boiling point of water which is a constant 
-// const bodyTemp = 37 ;// oC average  human body temperature, which is a constant
-// console.log(age,gravity,mass, PI,bollingPoint,bodyTemp);
+// // // // Mpre Example 
+// // const bollingPoint = 100;//Tempatature in oC, boiling point of water which is a constant 
+// // const bodyTemp = 37 ;// oC average  human body temperature, which is a constant
+// // console.log(age,gravity,mass, PI,bollingPoint,bodyTemp);
 
-// // Math Object Example 
+// // // Math Object Example 
 
-// const PI = Math.PI;
-// console.log(PI)  // 3.141592653589793
+// // const PI = Math.PI;
+// // console.log(PI)  // 3.141592653589793
 
-// // Rounding to the closest number 
-// // if above . 5 up  if less 0.5 down rounding
-// console.log(Math.round(PI)); // 3 to round values to the nearest number
-// console.log(Math.round(9.81)); // 10 
-// console.log(Math.floor(PI)); //  3 rounding down  
-// console.log(Math.ceil(PI)); //  4 rounding  up
-// console.log(Math.min(-5,3,20,4,5,10)); //   - 5, retuns the maximum value
-// console.log(Math.max(-5,3,20,4,5,10)); // 20, returns the maximum value
-// const randNum = Math.random() // creates random number between  0 to 0.999999
-// console.log(randNum)
+// // // Rounding to the closest number 
+// // // if above . 5 up  if less 0.5 down rounding
+// // console.log(Math.round(PI)); // 3 to round values to the nearest number
+// // console.log(Math.round(9.81)); // 10 
+// // console.log(Math.floor(PI)); //  3 rounding down  
+// // console.log(Math.ceil(PI)); //  4 rounding  up
+// // console.log(Math.min(-5,3,20,4,5,10)); //   - 5, retuns the maximum value
+// // console.log(Math.max(-5,3,20,4,5,10)); // 20, returns the maximum value
+// // const randNum = Math.random() // creates random number between  0 to 0.999999
+// // console.log(randNum)
 
-// let us create random number between 0 to 10 
-const num = Math.floor(Math.random() * 11) // creates random  between 0 and 10 
-console.log(num);
+// // let us create random number between 0 to 10 
+// const num = Math.floor(Math.random() * 11) // creates random  between 0 and 10 
+// console.log(num);
 
-// Absolute value 
-console.log(Math.abs(-10)); // 10
+// // Absolute value 
+// console.log(Math.abs(-10)); // 10
 
-// Square root
-console.log(Math.sqrt(100)); // 10 
-console.log(Math.sqrt(2)); // 1.4142135623730951
+// // Square root
+// console.log(Math.sqrt(100)); // 10 
+// console.log(Math.sqrt(2)); // 1.4142135623730951
 
-// Power
-console.log(Math.pow(3,2)); // 9
-console.log(Math.E); // 2.718
+// // Power
+// console.log(Math.pow(3,2)); // 9
+// console.log(Math.E); // 2.718
 
-// logarithm 
-// Returns the natural logarithm with base E of x, Math.log(x)
-console.log(Math.log(2)); // 0.6931471805599453
-console.log(Math.log(10)); // 2.302585092994046
+// // logarithm 
+// // Returns the natural logarithm with base E of x, Math.log(x)
+// console.log(Math.log(2)); // 0.6931471805599453
+// console.log(Math.log(10)); // 2.302585092994046
 
-// Returns the natural logarithm  of 2 and 10 respectively 
-console.log(Math.LN2); // 0.6931471805599453
-console.log(Math.LN10); // 2.302585092994046
-// Trigonometry 
-Math.sin(0)
-console.log(Math.sin(0)); // 0
-Math.sin(60)
-console.log(Math.sin(60)); //  -0.3048106211022167
+// // Returns the natural logarithm  of 2 and 10 respectively 
+// console.log(Math.LN2); // 0.6931471805599453
+// console.log(Math.LN10); // 2.302585092994046
+// // Trigonometry 
+// Math.sin(0)
+// console.log(Math.sin(0)); // 0
+// Math.sin(60)
+// console.log(Math.sin(60)); //  -0.3048106211022167
 
-Math.cos(0); 
-console.log(Math.cos(0)); // 1 
-Math.cos(60)
-console.log(Math.cos(60)); // -0.9524129804151563
+// Math.cos(0); 
+// console.log(Math.cos(0)); // 1 
+// Math.cos(60)
+// console.log(Math.cos(60)); // -0.9524129804151563
 
-// Random Number Generator 
-// The Javascript Math  Object has a random() method number generator which generates number from 0 to 0.999999999...
+// // Random Number Generator 
+// // The Javascript Math  Object has a random() method number generator which generates number from 0 to 0.999999999...
+
+// let randomNum = Math.random() ;
+// console.log(randomNum); // generates 0 to 0.999...
+
+// // Now let us see how we can use random method  to generate a random number between 0 and 10 :
+
+// let randNum = Math.random() // generates 0 to 0.999
+// let numBtnZeroAndTen = randNum * 11; 
+// console.log(numBtnZeroAndTen) ; // this gives : min 0 and max 10.99
+
+// let randomNumRoundToFloor =Math.floor(numBtnZeroAndTen);
+// console.log(randomNumRoundToFloor); /// this gives between 0 and 10
+
+// // Strings are text, which are under singel, double, back-tick quote, To decare a
+
+// // Strings Example :
+
+// let space = ' '; // An empty space string 
+// let firstName ='Sakib';
+// let lastName = 'Hasan';
+// let country = 'Bangladesh';
+// let city = 'Dhaka';
+// let language = 'Javascript';
+// let job = 'no';
+// let quote = "The saying,'Seeing is Believing' is not correct in 2023.";
+// let quotWithBackTick = `The saying, 'Seeing is Believing' is not correct in 2023.`;
 
 
+// // String Concatenation 
+// // connecting tow or more strings together is called concatenation. Using the string declared in the previous String section:
+
+// let fullName = firstName + space + lastName; // concatenation, merging two string together. 
+// console.log(fullName); // Sakib Hasan
+
+// // We can concatenate strings in different ways.
+
+// // Concatenating Using Addition Operator Example:
+
+// Declaring different variables of different data types
+
+let space = ' ';
+let firstName = 'Sakib';
+let lastName = 'Hasan';
+let country = 'Bangladesh';
+let city = 'Dhaka';
+let language = 'Javascript';
+let job ='no';
+let age = 18;
+
+let fullName = firstName + space + lastName;
+let personInfoOne = fullName + '. I am ' + age + '.I live in' + country; // ES5 string addition 
+console.log(personInfoOne); // Sakib Hasan. I am 18. I live in Bangladesh  
 
 
-
- 
-
-
-
-
+// Escape Sequences in Strings
 
 //// data types End ////
 
